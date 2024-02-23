@@ -260,3 +260,4 @@ C:\Users\GEROME\Desktop\DESKTOP FOLDERS\ASP.netCore_Angular\PaymentAPI\PaymentAP
 C:\Users\GEROME\Desktop\DESKTOP FOLDERS\ASP.netCore_Angular\PaymentAPI\PaymentAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\GEROME\Desktop\DESKTOP FOLDERS\ASP.netCore_Angular\PaymentAPI\PaymentAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\GEROME\Desktop\DESKTOP FOLDERS\ASP.netCore_Angular\PaymentAPI\PaymentAPI\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\GEROME\Desktop\DESKTOP FOLDERS\ASP.netCore_Angular\PaymentAPI\PaymentAPI\obj\Debug\net8.0\PaymentAPI.sourcelink.json

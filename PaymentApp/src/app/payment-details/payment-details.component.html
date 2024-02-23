@@ -1,4 +1,4 @@
-<div class="bg-body-secondary text-center py-5 rounded-2">
+<div class="bg-body-secondary text-center my-5 py-5 rounded-2">
     <h1 class="display-6 fw-bold">Payment Detail Register</h1>
 </div>
 <div class="row mt-5">
@@ -12,11 +12,11 @@
                 <div class="flex-grow-1 mouse-hover"
                 (click)="populateForm(pd)">
                     <div class="fw-bold">{{pd.cardOwnerName.toUpperCase()}}</div>
-                    <div>{{pd.cardNumber}}</div>
+                    <div>{{ formatCardNumber(pd.cardNumber) }}</div>
                     <div class="fw-bold">{{pd.expirationDate}}</div>
                 </div>
                 <span class="text-secondary">
-                    <i class="fa-solid fa-trash-can fa-lg mouse-hover"
+                    <i class="fa-solid fa-trash-can fa-lg mouse-hover text-danger"
                     (click)="onDelete(pd.paymentDetailId)"></i>
                 </span>
             </li>

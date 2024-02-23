@@ -3,25 +3,25 @@
     <div class="mb-3">
         <label for="">Card Owner Name</label>
         <input class="form-control form-control-lg" placeholder="Name on Card" #cardOwnerName="ngModel"
-            name="cardOwnerName" [(ngModel)]="service.formData.cardOwnerName" required>
+            name="cardOwnerName" [(ngModel)]="service.formData.cardOwnerName" (input)="transformToUppercase()" required>
     </div>
     <div class="mb-3">
         <label for="">Card Number</label>
         <input class="form-control form-control-lg" placeholder="16 Digit Card Number" #cardNumber="ngModel"
-            name="cardNumber" [(ngModel)]="service.formData.cardNumber" required minlength="16" maxlength="16">
+            name="cardNumber" [(ngModel)]="service.formData.cardNumber" (input)="formatCardNumber()" required minlength="19" maxlength="19">
     </div>
 
     <div class="row">
         <div class="mb-3 col-6">
             <label for="">Security Code</label>
             <input class="form-control form-control-lg" placeholder="CVV" type="password" #securityCode="ngModel"
-                name="securityCode" [(ngModel)]="service.formData.securityCode" required minlength="3" maxlength="3">
+                name="securityCode" [(ngModel)]="service.formData.securityCode" required minlength="3" maxlength="3" pattern="[0-9]*">
         </div>
         <div class="mb-3 col-6">
             <label for="">Valid Through</label>
             <input class="form-control form-control-lg" placeholder="MM/YY" #expirationDate="ngModel"
-                name="expirationDate" [(ngModel)]="service.formData.expirationDate" required minlength="5"
-                maxlength="5">
+                name="expirationDate" [(ngModel)]="service.formData.expirationDate" (input)="formatExpirationDate()" required minlength="5"
+                maxlength="5" max="12/99">
         </div>
     </div>
 
